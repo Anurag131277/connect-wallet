@@ -1,5 +1,5 @@
 {
-  "name": "web3modal-vanilla-js-example-master",
+  "name": "web3modal-vanilla-js-connectWallets",
   "version": "1.0.0",
   "description": "This is a vanilla JavaScript example how to use Web3modal with different  wallet providers.",
   "main": "index.js",
