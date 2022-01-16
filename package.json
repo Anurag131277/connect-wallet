@@ -1,0 +1,15 @@
+{
+  "name": "web3modal-vanilla-js-example-master",
+  "version": "1.0.0",
+  "description": "This is a vanilla JavaScript example how to use Web3modal with different  wallet providers.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "https-localhost": "^4.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anurag",
+  "license": "ISC"
+}
