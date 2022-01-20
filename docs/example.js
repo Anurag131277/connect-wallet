@@ -102,8 +102,21 @@ function init() {
     providerOptions, // required
     disableInjectedProvider: false, // optional. For MetaMask / Brave / Opera.
   });
+  installMetamask()
 
   console.log("Web3Modal instance is", web3Modal);
+}
+
+function installMetamask() {
+  if (!(window.web3 || window.ethereum)) {
+    let ele= document.createElement('div');
+    ele.setAttribute('id',"installMetaMask");
+    ele.setAttribute('class',"sc-AxhUy web3modal-provider-wrapper");
+    ele.innerHTML=`<a href="https://metamask.io/" target="_blank" style="margin-top: 20px;" class="sc-AxhCb xPSun web3modal-provider-container"><div class="jMhaxE web3modal-provider-icon"><img src="./metamask-logo.svg" width="45px" height="45px" alt="MetaMask"></div><div class="bktcUM sc-web3modal-provider-name mt-0">Install MetaMask</div><div class="eFHlqH web3modal-provider-description">Connect using browser wallet</div></a>`;
+
+    if (!document.getElementById('installMetaMask'))
+      document.getElementsByClassName('web3modal-modal-card')[0].prepend(ele)
+  }
 }
 
 
